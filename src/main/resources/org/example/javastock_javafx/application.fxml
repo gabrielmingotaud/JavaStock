@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="applicationVbox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1000.0" spacing="30.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javastock_javafx.ApplicationController">
+   <children>
+      <HBox fx:id="HboxListView" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <children>
+            <ListView fx:id="applicationListView" prefHeight="200.0" prefWidth="800.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="applicationHbox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <HBox fx:id="HboxValue" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Button fx:id="applicationButtonAjouter21" mnemonicParsing="false" onAction="#ajouterElement" text="Ajouter" textAlignment="JUSTIFY" />
+                  <Button fx:id="applicationButtonModifier21" mnemonicParsing="false" onAction="#modifierElement" text="Modifier" />
+               </children>
+            </HBox>
+            <Pane fx:id="spacePane" prefHeight="200.0" prefWidth="200.0" />
+            <HBox fx:id="HboxSupprimer" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="applicationButtonSupprimer21" mnemonicParsing="false" onAction="#supprimerElement" text="Supprimer" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+      <Button fx:id="applicationButtonAjouter121" mnemonicParsing="false" onAction="#switchToMenu" text="Quitter" />
+   </children>
+</VBox>
